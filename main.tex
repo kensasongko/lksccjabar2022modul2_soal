@@ -57,7 +57,7 @@ You have been tasked to deploy a front-end web application on AWS. The applicati
 \section{Information}\label{information}
 \begin{enumerate}
     \item The repository URL for the project is \href{https://github.com/kensasongko/lksccjabar2022modul2_aplikasi}{https://github.com/kensasongko/lksccjabar2022modul2\_aplikasi}
-    \item The URL for the lambda@edge code is \href{https://gist.github.com/kensasongko/610912a2b9a645b00743c773a00848ea}{https://gist.github.com/kensasongko/610912a2b9a645b00743c773a00848ea}
+    \item The URL for the CloudFront Function code is \href{https://gist.github.com/kensasongko/610912a2b9a645b00743c773a00848ea}{https://gist.github.com/kensasongko/610912a2b9a645b00743c773a00848ea}
     \item This solution must be deployed in \textbf{us-east-1 (N. Virginia) region}. Deploying in another region will result in a major point reduction.
 \end{enumerate}
 \section{Task}
@@ -90,7 +90,7 @@ You have been tasked to deploy a front-end web application on AWS. The applicati
         \item Tags: Key=LKS-ID, Value=MODUL2
     \end{itemize}
     \item Configure CloudFront distribution to use custom domain modul2.[YOUR\_DOMAIN].
-    \item Create and publish a lambda@edge function (CloudFront function) using the code provided in number 2 from Section \ref{information}. Associate the function with your distribution.\\
+    \item Create and publish a CloudFront Function using the code provided in number 2 from Section \ref{information}. Associate the function with your distribution.\\
     Make sure you don't have to append index.html to access the website.
     \item Open pages/index.js with any text editor, replace the text "My Simple TODO Application" with "Peserta\_[YOUR\_PARTICIPATION\_ID] Simple TODO Application"
     \item Rebuild and re-export the application, re-upload the static page to the S3 bucket.
@@ -102,7 +102,7 @@ You have been tasked to deploy a front-end web application on AWS. The applicati
 \begin{itemize}
     \item \href{https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html}{S3 documentation}
     \item \href{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html}{CloudFront documentation}
-    \item \href{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html}{Lambda@Edge documentation}
+    \item \href{https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html}{CloudFront Function documentation}
     \item \href{https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html}{Route 53 documentation}
     \item \href{https://docs.aws.amazon.com/acm/latest/userguide/acm-overview.html}{Certificate Manager documentation}
     \item \href{https://docs.npmjs.com/cli/v8/commands}{npm documentation}
